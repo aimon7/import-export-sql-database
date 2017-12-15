@@ -16,7 +16,7 @@ Public Class ImportExportSqlDatabaseMaiForm
     Private Sub BtnImportDatabase_Click(sender As Object, e As EventArgs) Handles BtnImportDatabase.Click
         Cursor = Cursors.WaitCursor
         Dim constring As String = "server=" & TbxServer.Text & ";user=" & TbxUserName.Text & ";pwd=" & TbxPassword.Text & ";database=" & TbxDatabaseName.Text & ";default command timeout=8000;charset=utf8;"
-        Dim backupfile As String = ofdSqlToLoad.FileName 'εδώ να κοιτάξω αν μπορώ να το πάρω από ότι γράφει το textbox, έτσι ώστε να μπόρώ εναλλακτικά να γράφω στο textbox αντί να το διαλέξω από το OpenFileDialog
+        Dim backupfile As String = tbxSqlToLoad.Text
         Dim conn As MySqlConnection = New MySqlConnection(constring)
         Dim cmd As MySqlCommand = New MySqlCommand()
         Dim mb As MySqlBackup = New MySqlBackup(cmd)
@@ -31,7 +31,7 @@ Public Class ImportExportSqlDatabaseMaiForm
     Private Sub BtnExportDatabase_Click(sender As Object, e As EventArgs) Handles BtnExportDatabase.Click
         Cursor = Cursors.WaitCursor
         Dim constring As String = "server=" & TbxServer.Text & ";user=" & TbxUserName.Text & ";pwd=" & TbxPassword.Text & ";database=" & TbxDatabaseName.Text & ";default command timeout=8000;charset=utf8;"
-        Dim backupfile As String = ofdSqlToLoad.FileName
+        Dim backupfile As String = tbxSqlToLoad.Text
         Dim conn As MySqlConnection = New MySqlConnection(constring)
         Dim cmd As MySqlCommand = New MySqlCommand()
         Dim mb As MySqlBackup = New MySqlBackup(cmd)
