@@ -43,11 +43,10 @@ Partial Class ImportExportSqlDatabaseMaiForm
         '
         Me.BtnSqlToLoad.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnSqlToLoad.Image = CType(resources.GetObject("BtnSqlToLoad.Image"), System.Drawing.Image)
-        Me.BtnSqlToLoad.Location = New System.Drawing.Point(739, 112)
-        Me.BtnSqlToLoad.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSqlToLoad.Location = New System.Drawing.Point(554, 91)
         Me.BtnSqlToLoad.Name = "BtnSqlToLoad"
-        Me.BtnSqlToLoad.Size = New System.Drawing.Size(30, 30)
-        Me.BtnSqlToLoad.TabIndex = 174
+        Me.BtnSqlToLoad.Size = New System.Drawing.Size(22, 24)
+        Me.BtnSqlToLoad.TabIndex = 5
         Me.BtnSqlToLoad.UseVisualStyleBackColor = True
         '
         'tbxSqlToLoad
@@ -55,88 +54,88 @@ Partial Class ImportExportSqlDatabaseMaiForm
         Me.tbxSqlToLoad.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbxSqlToLoad.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.tbxSqlToLoad.Location = New System.Drawing.Point(136, 113)
-        Me.tbxSqlToLoad.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbxSqlToLoad.Location = New System.Drawing.Point(123, 92)
         Me.tbxSqlToLoad.Name = "tbxSqlToLoad"
         Me.tbxSqlToLoad.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.tbxSqlToLoad.Size = New System.Drawing.Size(595, 25)
-        Me.tbxSqlToLoad.TabIndex = 173
+        Me.tbxSqlToLoad.Size = New System.Drawing.Size(426, 22)
+        Me.tbxSqlToLoad.TabIndex = 6
+        Me.tbxSqlToLoad.TabStop = False
         '
         'lblSqlToLoad
         '
         Me.lblSqlToLoad.AutoSize = True
         Me.lblSqlToLoad.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.lblSqlToLoad.Location = New System.Drawing.Point(13, 117)
-        Me.lblSqlToLoad.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSqlToLoad.Location = New System.Drawing.Point(10, 95)
         Me.lblSqlToLoad.Name = "lblSqlToLoad"
-        Me.lblSqlToLoad.Size = New System.Drawing.Size(122, 20)
+        Me.lblSqlToLoad.Size = New System.Drawing.Size(107, 16)
         Me.lblSqlToLoad.TabIndex = 172
         Me.lblSqlToLoad.Text = "sql to save/load:"
         '
         'BtnImportDatabase
         '
         Me.BtnImportDatabase.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.BtnImportDatabase.Location = New System.Drawing.Point(215, 156)
-        Me.BtnImportDatabase.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnImportDatabase.Location = New System.Drawing.Point(161, 127)
         Me.BtnImportDatabase.Name = "BtnImportDatabase"
-        Me.BtnImportDatabase.Size = New System.Drawing.Size(160, 28)
-        Me.BtnImportDatabase.TabIndex = 175
+        Me.BtnImportDatabase.Size = New System.Drawing.Size(120, 23)
+        Me.BtnImportDatabase.TabIndex = 7
         Me.BtnImportDatabase.Text = "Import Database"
         Me.BtnImportDatabase.UseVisualStyleBackColor = True
         '
         'BtnExportDatabase
         '
         Me.BtnExportDatabase.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.BtnExportDatabase.Location = New System.Drawing.Point(383, 156)
-        Me.BtnExportDatabase.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnExportDatabase.Location = New System.Drawing.Point(287, 127)
         Me.BtnExportDatabase.Name = "BtnExportDatabase"
-        Me.BtnExportDatabase.Size = New System.Drawing.Size(160, 28)
-        Me.BtnExportDatabase.TabIndex = 176
+        Me.BtnExportDatabase.Size = New System.Drawing.Size(120, 23)
+        Me.BtnExportDatabase.TabIndex = 8
         Me.BtnExportDatabase.Text = "Export Database"
         Me.BtnExportDatabase.UseVisualStyleBackColor = True
         '
         'ofdSqlToLoad
         '
-        Me.ofdSqlToLoad.Filter = "Sql Files (*.sql)| *.csv|All Files (*.*) | *.*"
+        Me.ofdSqlToLoad.Filter = "Sql Files (*.sql)| *.sql|All Files (*.*) | *.*"
         Me.ofdSqlToLoad.RestoreDirectory = True
         Me.ofdSqlToLoad.Title = "Open an index.html file"
         '
         'TbxUserName
         '
-        Me.TbxUserName.Location = New System.Drawing.Point(113, 68)
+        Me.TbxUserName.Location = New System.Drawing.Point(95, 55)
+        Me.TbxUserName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TbxUserName.Name = "TbxUserName"
-        Me.TbxUserName.Size = New System.Drawing.Size(305, 22)
-        Me.TbxUserName.TabIndex = 177
+        Me.TbxUserName.Size = New System.Drawing.Size(220, 20)
+        Me.TbxUserName.TabIndex = 2
         '
         'TbxServer
         '
-        Me.TbxServer.Location = New System.Drawing.Point(125, 30)
+        Me.TbxServer.Location = New System.Drawing.Point(106, 24)
+        Me.TbxServer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TbxServer.Name = "TbxServer"
-        Me.TbxServer.Size = New System.Drawing.Size(293, 22)
-        Me.TbxServer.TabIndex = 178
+        Me.TbxServer.Size = New System.Drawing.Size(209, 20)
+        Me.TbxServer.TabIndex = 1
         '
         'TbxDatabaseName
         '
-        Me.TbxDatabaseName.Location = New System.Drawing.Point(573, 68)
+        Me.TbxDatabaseName.Location = New System.Drawing.Point(430, 55)
+        Me.TbxDatabaseName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TbxDatabaseName.Name = "TbxDatabaseName"
-        Me.TbxDatabaseName.Size = New System.Drawing.Size(196, 22)
-        Me.TbxDatabaseName.TabIndex = 179
+        Me.TbxDatabaseName.Size = New System.Drawing.Size(148, 20)
+        Me.TbxDatabaseName.TabIndex = 4
         '
         'TbxPassword
         '
-        Me.TbxPassword.Location = New System.Drawing.Point(525, 30)
+        Me.TbxPassword.Location = New System.Drawing.Point(394, 24)
+        Me.TbxPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TbxPassword.Name = "TbxPassword"
-        Me.TbxPassword.Size = New System.Drawing.Size(244, 22)
-        Me.TbxPassword.TabIndex = 180
+        Me.TbxPassword.Size = New System.Drawing.Size(184, 20)
+        Me.TbxPassword.TabIndex = 3
         '
         'LblServer
         '
         Me.LblServer.AutoSize = True
         Me.LblServer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.LblServer.Location = New System.Drawing.Point(13, 30)
-        Me.LblServer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblServer.Location = New System.Drawing.Point(10, 24)
         Me.LblServer.Name = "LblServer"
-        Me.LblServer.Size = New System.Drawing.Size(105, 20)
+        Me.LblServer.Size = New System.Drawing.Size(91, 16)
         Me.LblServer.TabIndex = 181
         Me.LblServer.Text = "Server Name:"
         '
@@ -144,10 +143,9 @@ Partial Class ImportExportSqlDatabaseMaiForm
         '
         Me.LblUserName.AutoSize = True
         Me.LblUserName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.LblUserName.Location = New System.Drawing.Point(13, 68)
-        Me.LblUserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblUserName.Location = New System.Drawing.Point(10, 55)
         Me.LblUserName.Name = "LblUserName"
-        Me.LblUserName.Size = New System.Drawing.Size(93, 20)
+        Me.LblUserName.Size = New System.Drawing.Size(80, 16)
         Me.LblUserName.TabIndex = 182
         Me.LblUserName.Text = "User Name:"
         '
@@ -155,10 +153,9 @@ Partial Class ImportExportSqlDatabaseMaiForm
         '
         Me.LblPassword.AutoSize = True
         Me.LblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.LblPassword.Location = New System.Drawing.Point(425, 30)
-        Me.LblPassword.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPassword.Location = New System.Drawing.Point(319, 24)
         Me.LblPassword.Name = "LblPassword"
-        Me.LblPassword.Size = New System.Drawing.Size(82, 20)
+        Me.LblPassword.Size = New System.Drawing.Size(71, 16)
         Me.LblPassword.TabIndex = 183
         Me.LblPassword.Text = "Password:"
         '
@@ -166,18 +163,17 @@ Partial Class ImportExportSqlDatabaseMaiForm
         '
         Me.LblDatabaseName.AutoSize = True
         Me.LblDatabaseName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.LblDatabaseName.Location = New System.Drawing.Point(425, 68)
-        Me.LblDatabaseName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblDatabaseName.Location = New System.Drawing.Point(319, 55)
         Me.LblDatabaseName.Name = "LblDatabaseName"
-        Me.LblDatabaseName.Size = New System.Drawing.Size(125, 20)
+        Me.LblDatabaseName.Size = New System.Drawing.Size(108, 16)
         Me.LblDatabaseName.TabIndex = 184
         Me.LblDatabaseName.Text = "Database Name"
         '
         'ImportExportSqlDatabaseMaiForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(782, 253)
+        Me.ClientSize = New System.Drawing.Size(586, 206)
         Me.Controls.Add(Me.LblDatabaseName)
         Me.Controls.Add(Me.LblPassword)
         Me.Controls.Add(Me.LblUserName)
@@ -191,6 +187,7 @@ Partial Class ImportExportSqlDatabaseMaiForm
         Me.Controls.Add(Me.BtnSqlToLoad)
         Me.Controls.Add(Me.tbxSqlToLoad)
         Me.Controls.Add(Me.lblSqlToLoad)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ImportExportSqlDatabaseMaiForm"
         Me.Text = "Import and Export SQL databases "
         Me.ResumeLayout(False)
